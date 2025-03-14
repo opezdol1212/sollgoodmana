@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #1c1c1c; /* Темный фон */
-            color: #f9f200; /* Желтый текст */
+            background-color: #f8d02e; /* Мягкий желтый фон */
+            color: #d04a2f; /* Текст в красном оттенке */
             font-family: 'Comic Sans MS', sans-serif;
             font-weight: bold;
             display: flex;
@@ -26,10 +26,10 @@
             font-size: 3rem;
             margin-bottom: 10px;
             font-family: 'Fredoka One', cursive; /* Применили новый шрифт только к заголовку */
-            color: #ffcc00; /* Ярко-желтый для заголовка */
+            color: #e23d28; /* Тёмно-красный для заголовка */
         }
         .description {
-            background-color: #ff3300; /* Красный фон для описания */
+            background-color: #f1a73d; /* Тёплый оранжево-красный фон */
             padding: 25px;
             border-radius: 10px;
             max-width: 600px;
@@ -52,10 +52,10 @@
         .rocket-body {
             width: 70px; /* Сделал немного уже */
             height: 180px; /* Сделал ракету ниже */
-            background-color: #ff6600; /* Красный корпус ракеты */
+            background-color: #ccc;
             position: relative;
             border-radius: 0 0 50px 50px;
-            border: 4px solid #ff3300; /* Более темный красный для границ */
+            border: 4px solid #333;
             box-shadow: 0 0 10px rgba(0,0,0,0.5);
         }
         .rocket-nose {
@@ -65,9 +65,9 @@
             transform: translateX(-50%) rotate(0deg); /* Направили нос вверх */
             width: 70px; /* Ширина носа такая же, как и корпуса */
             height: 60px; /* Высота носа */
-            background-color: #ff0000; /* Ярко-красный нос ракеты */
+            background-color: #999;
             clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-            border: 4px solid #ff3300;
+            border: 4px solid #333;
             box-shadow: 0 0 10px rgba(0,0,0,0.5);
         }
         .rocket-wings {
@@ -77,15 +77,15 @@
             transform: translateX(-50%);
             width: 120px;
             height: 50px;
-            background-color: #ff3333; /* Красные крылья */
+            background-color: #666;
             border-radius: 25px;
-            border: 4px solid #ff3300;
+            border: 4px solid #333;
             box-shadow: 0 0 10px rgba(0,0,0,0.5);
         }
         .flame {
             width: 50px;
             height: 80px;
-            background: radial-gradient(circle, #ff6600, #ff0000); /* Желто-красный огонь */
+            background: radial-gradient(circle, orange, yellow);
             position: absolute;
             bottom: -80px;
             left: 50%;
@@ -109,7 +109,7 @@
             top: 10px;
             right: 30px; /* Сдвинули кнопку X немного левее */
             font-size: 40px;
-            color: #ffcc00; /* Желтый цвет для логотипа */
+            color: #e23d28; /* Тёмно-красный для логотипа */
             text-decoration: none;
             font-family: 'Comic Sans MS', sans-serif;
             font-weight: bold;
@@ -137,7 +137,7 @@
             left: 50%;
             width: 8px;
             height: 8px;
-            background-color: yellow;
+            background-color: #ffcc00; /* Желтые частицы */
             border-radius: 50%;
             animation: sparkle-animation 1.5s infinite;
             z-index: 0;
@@ -181,3 +181,4 @@
     </script>
 </body>
 </html>
+
